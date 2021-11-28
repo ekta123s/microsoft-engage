@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | EngagedExams</title>
+    <link rel="stylesheet" href="../../css/studentJoin.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+  </head>
+  <body>
+    <nav
+      class="navbar is-dark"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> Documentation </a>
+          <a class="navbar-item" href="http://localhost:4000">
+            Discussion Forum
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-height div1">
+      <p class="title is-2" id="title1">All the best</p>
+      <p class="title is-4" id = "subtitle">Enter your NAME and EXAM PIN to enter the quiz</p>
+
+      <div class="formbox">
+        <center>
+          <form class="box" action="/player/">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input
+                  class="input"
+                  required
+                  type="text"
+                  placeholder="Name"
+                  id="name"
+                  name="name"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Exam Pin</label>
+              <div class="control">
+                <input
+                  class="input"
+                  required
+                  type="number"
+                  placeholder="123456"
+                  id="pin"
+                  name="pin"
+                />
+              </div>
+            </div>
+
+            <button class="button is-primary" id="joinButton">Join Quiz</button>
+          </form>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

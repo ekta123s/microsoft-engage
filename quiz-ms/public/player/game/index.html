@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game | Quizzy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../../css/playerGameView.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-dark"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> Documentation </a>
+        </div>
+      </div>
+    </nav>
+
+    <h2 id="message"></h2>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="box is-half">
+            <p>
+              <span class="label">Name : </span>
+              <span class="" id="nameText"></span>
+            </p>
+            <p>
+              <span class="label">Score : </span> <span id="scoreText"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <p><span class="label" class = "qclass">Question : </span></p>
+            <p id="question" class = "qclass"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="options-section">
+      <div class="columns">
+        <div class="column">
+          <div class="box options">
+            <button onclick="answerSubmitted(1)" class="label" id="answer1">
+              Option A :
+            </button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box options">
+            <button onclick="answerSubmitted(2)" class="label" id="answer2">
+              Option B :
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="box options">
+            <button onclick="answerSubmitted(3)" class="label" id="answer3">
+              Option C :
+            </button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box options">
+            <button onclick="answerSubmitted(4)" class="label" id="answer4">
+              Option D :
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/playerGame.js"></script>
+  </body>
+</html>

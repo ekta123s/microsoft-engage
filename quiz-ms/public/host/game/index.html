@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EngagedExams</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../../css/hostGameView.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tajawal"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  
+  <body>
+    <nav
+      class="navbar is-dark"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> Documentation </a>
+          <a class="navbar-item" href="http://localhost:4000">
+            Discussion Forum
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="div1">
+        <p id="playersAnswered">Students Answered: 0 / x</p>
+        <p id="timerText">Time Left:<span id="num"> 20 </span></p>
+      </div>
+
+      <h2 id="question" class="title is-3">Question</h2>
+      <h3 id="answer1" class="title is-4">Answer</h3>
+      <br />
+      <h3 id="answer2" class="title is-4">Answer</h3>
+      <br />
+      <h3 id="answer3" class="title is-4">Answer</h3>
+      <br />
+      <h3 id="answer4" class="title is-4">Answer</h3>
+
+      <br />
+      <button onclick="nextQuestion()" id="nextQButton" class="button is-black">
+        Next Question
+      </button>
+      <button onclick="pauseTimer()" id="pauseTimer" class="button is-black">
+        Pause Timer
+      </button>
+
+      <center>
+        <h1 class="title is-1" id="quiz-over">TEST OVER</h1>
+        <h2 class="title is-2" id="score-title">Score of the participants :</h2>
+
+        <div id="div2" class="columns">
+          <div class="column is-one-third"></div>
+          <div class="column is-one-third">
+            <table class="table is-striped is-bordered" id="scoreTable">
+              <thead class="center">
+                <th>Position</th>
+                <th>Name</th>
+                <th>Score</th>
+              </thead>
+
+              <tbody id="scoreTableBody"></tbody>
+            </table>
+          </div>
+          <div class="column is-one-third"></div>
+        </div>
+      </center>
+    </div>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/hostGame.js"></script>
+  </body>
+</html>

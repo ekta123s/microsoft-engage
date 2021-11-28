@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Host | EngagedExams</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+     <link rel="stylesheet" href="../../css/host.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tajawal"
+      rel="stylesheet"
+    />
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+  </head>
+  <body>
+    <nav
+      class="navbar is-dark"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> Documentation </a>
+          <a class="navbar-item" href="http://localhost:4000">
+            Discussion Forum
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="columns block">
+        <div
+          class="column is-half box container con1"
+        >
+          <section class="section">
+            <h2 class="title is-2" id = "tit1">To join this quiz use this PIN</h2>
+            <center><h1 class="title is-1" id="gamePinText"></h1></center>
+          </section>
+          <section class="section">
+            <center>
+              <button
+                type="button"
+                class="button is-large is-black"
+                id="start"
+                onclick="startQuiz()"
+              >
+                Start Quiz
+              </button>
+            </center>
+            <center>
+              <p id = "tit4">Start the quiz when all the students have joined.</p>
+            </center>
+          </section>
+          
+          
+        </div>
+        
+
+        <div class="column is-half">
+          <section class="section">
+            <div class="menu">
+              <p class="menu-label" id = "tit2">Participants</p>
+              <p class="menu-label" id = "tit3">
+                These people have already joined your quiz!
+              </p>
+              <div id = "div3">
+                Number of participants : <span id = "noOfParticipants">0</span>
+              </div>
+              <ul class="menu-list" id="studentsJoined">
+                
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="../js/libs/jqueryLibrary.js"></script>
+    <script src="../js/libs//deparam.js"></script>
+    <script src="../js/host.js"></script>
+  </body>
+</html>
