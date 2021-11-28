@@ -1,0 +1,52 @@
+html, body { height: 90%; padding: 0; margin: 0; }
+button{
+    width: 50%; height: 50%; float: left;
+}
+#answer1{
+    background-color: #95fa9a;
+    height: 100%;
+    width: 100%;
+}
+#answer2{
+    background-color: #fc9b9b;
+    height: 100%;
+    width: 100%;
+}
+#answer3{
+    background-color: #98cafc;
+    height: 100%;
+    width: 100%;
+}
+#answer4{
+    background-color: #fcef7c;
+    height: 100%;
+    width: 100%;
+}
+
+#buttons{
+    text-align: center;
+}
+#nameText{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+}
+#scoreText{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+}
+#message{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+.options {
+    height: 120px;
+    width: 420px;
+  }
+
+  .box {
+    padding: 0px;
+  }
+  .qclass {
+    font-size: 24px;
+  }
