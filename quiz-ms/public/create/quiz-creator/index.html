@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creator | EngagedExam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../../css/quizCreator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item">Documentation</a>
+        </div>
+      </div>
+    </nav>
+    <div class="block">
+      <section>
+        <div>
+          <center>
+            <p class="title" id = "title1">Create Assessments</p>
+            <p class="subtitle" id = "subtitle">
+              To make a quiz add questions, add options and choose the corection
+              option.
+            </p>
+          </center>
+        </div>
+      </section>
+    </div>
+
+    <div class="container block">
+      <div class="field">
+        <label class="label">Name of Assessment</label>
+        <div class="control columns">
+          <div class="column is-one-third">
+            <input
+              class="input is-normal"
+              type="text"
+              placeholder="Assessment Name"
+              id="name"
+              required="true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="allQuestions">
+        
+        <div id = "Ques1">
+
+        <div class="field">
+          <label class="label">Question</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="Type your question here"
+              id="q1"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+              <label class="label">Option A</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Type option A here"
+                  id="1A"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label">Option B</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Type option B here"
+                  id="1B"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+              <label class="label">Option C</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Type option C here"
+                  id="1C"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label">Option D</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Type option D here"
+                  id="1D"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Select the correct option</label>
+          <div class="control">
+            <div class="select">
+              <select id="correct1">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button is-danger" onclick="deleteButton(1)">Delete Question</button>
+
+    </div>
+
+      <div class="field block">
+        <div class="control">
+          <button
+            class="chan"
+            class="button is-link is-light"
+            onclick="addQuestion()"
+          >
+            Add Another Question
+          </button>
+        </div>
+      </div>
+
+      <div class="field is-grouped block">
+        <div class="control">
+          <button
+            class="chan"
+            class="button is-link is-light"
+            onclick="updateDatabase()"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="control">
+          <button
+            class="chan"
+            class="button is-link is-light"
+            onclick="cancelQuiz()"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/quizCreator.js"></script>
+  </body>
+</html>

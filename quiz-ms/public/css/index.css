@@ -1,0 +1,37 @@
+.container2 {
+  padding-top: 100px;
+}
+
+#btn {
+  margin-left: 60px;
+}
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+#engexams {
+  font-family: "Comfortaa", cursive;
+  font-size: 50px;
+  padding-top: 20px;
+  color: rgb(31, 37, 109);
+}
+
+#subt {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  color: rgb(78, 34, 34);
+}
+
+#box1 {
+  background-color:rgb(240, 234, 157);
+}
+#box2 {
+  background-color:rgb(182, 250, 199);
+}
+#box3 {
+  background-color:rgb(246, 166, 166);
+}
+.button {
+  margin-top: 20px;
+}

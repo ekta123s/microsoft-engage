@@ -1,0 +1,43 @@
+.con1 {
+    margin-top: 100px;
+    background-color: rgb(207, 238, 241);
+  }
+
+  #tit1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: rgb(78, 34, 34);
+  }
+
+  #tit2 {
+    font-family: "Raleway", cursive;
+    font-size: 40px;
+    color: rgb(31, 37, 109);
+    margin-bottom: 0px;
+  }
+  #tit3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: rgb(78, 34, 34);
+    margin-top : 0px;
+  }
+
+  #tit4 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 17px;
+    color: rgb(78, 34, 34);
+    margin-top : 10px;
+  }
+
+ #studentsJoined {
+   font-family: "Raleway", monospace;
+   font-size: 18px;
+   font-weight: 13px;
+
+ }
+
+ #noOfParticipants, #div3 {
+   font-family: "Raleway", monospace;
+   font-size: 18px;
+   font-weight: bold;
+ }

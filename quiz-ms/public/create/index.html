@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create | EngagedExams</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .tab {
+        margin-top: 40px;
+      }
+      .btn {
+        padding-top: 30px;
+      }
+      .bg {
+        background-image: url("../assets/backg1.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .subt {
+        font-family: "Roboto Mono", monospace;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        
+      }
+
+      #subtitle {
+        margin-top:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar is-dark"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> Documentation </a>
+          <a class="navbar-item" href="http://localhost:4000">
+            Discussion Forum
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg">
+      <div>
+        <section class="btn" class="container">
+          <center>
+            <a class="button is-black is-large" href="quiz-creator/"
+              >Create a new assessment</a
+            >
+          </center>
+        </section>
+      </div>
+
+      <div id = "subtitle">
+      <center>
+      <p class = "subt">List of Exams already created</p>
+      
+      </center>
+    </div>
+
+      <center class="tab">
+        <table class="table table-striped is-bordered">
+          <thead>
+            <tr>
+              <th>Names of existing assessments</th>
+            </tr>
+          </thead>
+          <tbody id="game-list"></tbody>
+          <tr></tr>
+        </table>
+      </center>
+    </div>
+
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="../js/create.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+#answer1{
+    background-color: #95fa9a;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+#answer2{
+    background-color: #fc9b9b;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#answer3{
+    background-color: #98cafc;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+#answer4{
+    background-color: #e9de7c;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+
+#nextQButton{
+    display: block;
+}
+#question{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+}
+#timerText{
+    font-family: 'Raleway', sans-serif;
+}
+#num{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 35px;
+}
+#playersAnswered{
+    font-family: 'Tajawal', sans-serif;
+}
+#questionNum{
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+#scoreTable  {
+    display: none; 
+    
+}
+
+#quiz-over {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+#score-title {
+    display: none;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  #playersAnswered {
+    font-family: "Tajawal", cursive;
+    font-size: 26px;
+    color: rgb(31, 37, 109);
+    font-weight: bold;
+  }
+
+  #timerText {
+    font-family: "Tajawal", cursive;
+    font-size: 26px;
+    color: rgb(31, 37, 109);
+    font-weight: bold;
+    float: right;
+  }
+
+  #div1 {
+    width: 100%;
+  }
+  #div2 {
+    align-items: center;
+  }
+  #pauseTimer {
+    margin-top: 10px;
+  }
